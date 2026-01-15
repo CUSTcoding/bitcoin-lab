@@ -1,0 +1,56 @@
+@startuml bitcoin prototype 
+
+class Blockchain{
+    - chain: [{Block}]
+}
+
+class Miner{
+    +proof_of_work()
+}
+
+class wallet{
+    +send_bitcoin()
+}
+
+class Block{
+
+    - index: Int
+    - time_stamp: Int
+    - data : String
+    - nonce: Int
+    - hash: String
+    - merkle_root: str
+    - difficulty: int
+    - previous_blockhash: String
+    - transaction : [{Trasation}]
+    + create_block()
+    + calculate_hash()
+    + mine_block(difficulty: int): void
+}
+
+class Trasation{
+    - id_trasaction: String
+    - senderPublicKey: String
+    - receiverPublicKey: String
+    - amount: Float
+    - signature: String
+    - public_key: String
+    - timestamp: Int
+    - fees_mined: Float
+    - is_valid(): Boolean
+    - seq: String
+    + verify_transaction()
+    + lock_script()
+    + unlock_script()
+
+}
+
+class Coin{
+
+}
+
+class Mempool{
+
+}
+
+@enduml
