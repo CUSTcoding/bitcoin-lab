@@ -205,3 +205,86 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+####################################
+# Rust (Cargo)
+####################################
+# Build artifacts
+/target/
+**/*.rs.bk
+
+# Cargo.lock (descomente se for library)
+/Cargo.lock
+
+####################################
+# Java
+####################################
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# JVM crash logs
+hs_err_pid*
+
+####################################
+# Maven
+####################################
+/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+####################################
+# Gradle
+####################################
+.gradle/
+build/
+
+####################################
+# IntelliJ IDEA
+####################################
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+####################################
+# Eclipse
+####################################
+.project
+.classpath
+.settings/
+bin/
+
+####################################
+# VS Code
+####################################
+.vscode/
+.history/
+
+####################################
+# OS
+####################################
+.DS_Store
+Thumbs.db
+
+####################################
+# Environment / Secrets
+####################################
+.env
+*.pem
+*.key
